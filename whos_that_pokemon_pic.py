@@ -25,7 +25,7 @@ pokemon_metadata = MetadataCatalog.get("pokemon_valid")
 
 for d in random.sample(dataset_dicts, 3 if len(dataset_dicts)>3 else len(dataset_dicts)):    
     # im = cv2.imread(d["file_name"])
-    im = cv2.imread("../../datasets/pokemon/" + "2.jpeg")
+    im = cv2.imread("../../datasets/pokemon/" + "3.png")
     outputs = predictor(im)
     v = Visualizer(im[:, :, ::-1],
                    metadata=pokemon_metadata, 
